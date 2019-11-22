@@ -15,7 +15,7 @@ let PRODUCTS = {
 };
 
 
-class App extends Component {
+class Product extends Component {
 
   constructor(props) {
     super(props);
@@ -52,6 +52,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h2>My Inventory</h2>
         <Filter 
             onFilter={this.handleFilter}/>
 
@@ -67,4 +68,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Product;
