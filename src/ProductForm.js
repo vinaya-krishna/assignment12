@@ -34,20 +34,25 @@ class ProductForm extends Component {
     render() {
         return (
             <div>
-                <h2>Enter a new Product</h2>
-                <label>Name</label>
-                <br/>
-                <input type="text" onChange={this.handleChange} name="name"></input>
-                <br/>
-                <label>Category</label>
-                <br/>
-                <input type="text" onChange={this.handleChange} name="category"></input>
-                <br/>
-                <label>Price</label>
-                <br/>
-                <input type="text" onChange={this.handleChange} name="price"></input>
-                <br/>
-                <button type="button" onClick={this.handleSave}>Save</button>
+                <h2>Add a new Product</h2>
+                <div className="col-md-6">
+                    <form> 
+                        <div className="form-group">
+                            <label htmlFor="productName">Name</label>
+                            <input className="form-control" id="productName" type="text" onChange={this.handleChange} name="name"></input>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="productCategory">Category</label>
+                            <input className="form-control" id="productCategory" type="text" onChange={this.handleChange} name="category"></input>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="productPrice">Price</label>
+                            <input className="form-control" id="productPrice" type="text" onChange={this.handleChange} name="price"></input>
+                        </div>
+                    
+                        <button className="btn btn-info" type="button" onClick={this.handleSave}>Save</button>
+                    </form>
+                </div>
                 
             </div>
         )

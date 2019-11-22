@@ -14,10 +14,11 @@ class ProductTable extends Component {
         let products = this.props.products;
         return (
             <div>
-                <table>
-                    <thead>
+                <table className="table table-striped">
+                    <thead className="thead-dark">
                         <tr>
                             <th>Name</th>
+                            <th>Category</th>
                             <th>Price</th>
                             <th></th>
                         </tr>

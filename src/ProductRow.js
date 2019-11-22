@@ -9,12 +9,14 @@ class ProductRow extends Component {
     render() {
         let name = this.props.product.name;
         let price = this.props.product.price;
+        let category = this.props.product.category;
         return (
             <tr>
                 <td>{name}</td>
                 <td>{price}</td>
+                <td>{category}</td>
                 <td>
-                    <button type="button" onClick={this.destroy}>Delete</button>
+                    <button className="btn btn-info" type="button" onClick={this.destroy}>Delete</button>
                 </td>
             </tr>
         )

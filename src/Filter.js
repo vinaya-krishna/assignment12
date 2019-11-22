@@ -11,8 +11,10 @@ class Filter extends Component {
 
     render() {
         return (
-            <div>
-                <input type="text" 
+            <div className="my-3">
+                <input 
+                        className="form-control" 
+                        type="text" 
                         placeholder="Search..."
                         onChange={this.handleChange}>        
                 </input>

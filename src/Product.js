@@ -51,18 +51,22 @@ class Product extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h2>My Inventory</h2>
-        <Filter 
-            onFilter={this.handleFilter}/>
+      <div className="container">
+        <div className="row justify-content-md-center">
+          <div className="col-md-6">
+            <h1>My Inventory</h1>
+            <Filter 
+                onFilter={this.handleFilter}/>
 
-        <ProductTable 
-            products={this.state.products} 
-            filterText={this.state.filterText}
-            onDestroy={this.handleDestroy}/>
+            <ProductTable 
+                products={this.state.products} 
+                filterText={this.state.filterText}
+                onDestroy={this.handleDestroy}/>
 
-        <ProductForm
-            onSave={this.handleSave}/>
+            <ProductForm
+                onSave={this.handleSave}/>
+            </div>
+        </div>
       </div>
     )
   }
